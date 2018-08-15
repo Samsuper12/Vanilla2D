@@ -120,7 +120,7 @@ int Engine::start()
 
 
 		//Render everything
-		window.clear();
+		window.clear(sf::Color(255, 255, 255, 0));
 		game.render(window);
 		window.display();
 	}
