@@ -56,7 +56,7 @@ Game::Game(std::vector<Statement>* _statements, ConfigOptions _opts, std::string
 	// textRect.setPosition(sf::Vector2f(16.f, opts.height-16-128));
 	// textRect.setSize(sf::Vector2f(opts.width-32.f, 128.f));
 	textRect.setPosition(sf::Vector2f(16.f, opts.height / 16));
-	textRect.setSize(sf::Vector2f(opts.width-32.f, ( opts.height / 16) * 14));
+	textRect.setSize(sf::Vector2f(opts.width-32.f, opts.height - (opts.height / 8)));
 	textRect.setFillColor(sf::Color(0,0,0,100)); //75!!
 	textRect.setOutlineThickness(2);
 	textRect.setOutlineColor(sf::Color(0,0,0,255));
