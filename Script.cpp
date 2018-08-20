@@ -78,6 +78,7 @@ std::vector<Statement> Script::parse()
 
 		//Determine statement type
 		//Sorry, for this IF tree
+
 		if (type == L"music") {
 			s.type = StatementType::MUSIC;
 		} else if (type == L"bg") {
@@ -92,6 +93,10 @@ std::vector<Statement> Script::parse()
 			s.type = StatementType::TEXT_COLOR;
 		} else if (type == L"fade") {
 			s.type = StatementType::FADE;
+		} else if (type == L"newline") {
+			s.type = StatementType::NEWLINE;
+		} else if (type == L"newpage") {
+			s.type = StatementType::NEWPAGE;
 		} else {
 			LOGGER->Log("Script", "WARNING: unknown script token at line %d", line);
 			continue;

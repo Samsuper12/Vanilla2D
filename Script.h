@@ -38,7 +38,9 @@ enum StatementType {
 	TEXT,
 	FONT,
 	TEXT_COLOR,
-	FADE
+	FADE,
+	NEWLINE,
+	NEWPAGE
 };
 
 struct Statement {

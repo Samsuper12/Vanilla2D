@@ -136,6 +136,10 @@ void Game::nextStatement() {
 		return;
 	}
 
+	if (s.type == StatementType::NEWLINE) LOGGER->Log("Game", "Found newline statement");
+	if (s.type == StatementType::NEWPAGE) LOGGER->Log("Game", "Found newpage statement");
+
+
 	if (s.type == StatementType::DELAY) {
 		delay = atoi(s.content.c_str());
 		hideText = true;
