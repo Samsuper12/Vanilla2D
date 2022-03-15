@@ -1,3 +1,15 @@
+da
+dad
+dad
+ad
+ad
+zaredagovav komit
+fdobavuv simvol
+dobavyv she trohy
+
+
+
+
 #ifndef V2D_LOGGER_H
 #define V2D_LOGGER_H
 
